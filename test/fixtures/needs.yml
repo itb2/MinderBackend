@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  interest: one
+  user: one
+  proficiency: one
+
+two:
+  interest: two
+  user: two
+  proficiency: two
