@@ -25,7 +25,7 @@ User.create(
   password: 'jbebji34',
   photo: 'http://cdn-img.instyle.com/sites/default/files/styles/684xflex/public/images/2017/06/061617-rihanna-video.jpg?itok=0Cbj1_qj',
   age: 22,
-  occupation: 'Student',
+  occupation: 'Software Engineer',
   education: 'Duke University',
   status: 2
 )
@@ -38,7 +38,7 @@ User.create(
   age: 22,
   occupation: 'Student',
   education: 'San Fran',
-  status: 1
+  status: 2
 )
 
 User.create(
@@ -48,9 +48,9 @@ User.create(
   password: 'Shammy123',
   photo: 'https://media2.s-nbcnews.com/j/newscms/2016_48/1178509/halima-aden-miss-usa-today-161130-tease_820708b331a5564b54db86dd93e6be1d.today-inline-large.jpg',
   age: 22,
-  occupation: 'Engineer',
+  occupation: 'Lawyer',
   education: 'Illanois Tech',
-  status: 0
+  status: 1
 )
 User.create(
   fname: 'Kofi',
@@ -61,11 +61,108 @@ User.create(
   age: 22,
   occupation: 'Engineer',
   education: 'Los Angeles',
-  status: 1
+  status: 2
 )
 
-# if Rails.env == 'production'
-#   load Rails.root.join('db', 'seeds', 'production.rb')
-# else
-#   load Rails.root.join('db', 'seeds', 'development.rb')
-# end
+Message.create(
+  sender_id: 1,
+  receiver_id: 2,
+  content: "Hi, Ivory. What can you tell me about THREE.js?",
+  date: DateTime.now
+)
+
+Message.create(
+  sender_id: 1,
+  receiver_id: 3,
+  content: "Can you tell me about product management?",
+  date: DateTime.now
+)
+
+Message.create(
+  sender_id: 5,
+  receiver_id: 2,
+  content: "I think I can help you learn more about ios Development. LMK what you want to know. :)",
+  date: DateTime.now
+)
+
+Message.create(
+  sender_id: 4,
+  receiver_id: 3,
+  content: "Hey! Still need help with legal stuff?",
+  date: DateTime.now
+)
+
+Message.create(
+  sender_id: 5,
+  receiver_id: 4,
+  content: "What can you tell me about preparing for the LSAT?",
+  date: DateTime.now
+)
+
+MentorMentee.create(
+  mentor_id: 2,
+  mentee_id: 1,
+  status: 2
+)
+MentorMentee.create(
+  mentor_id: 3,
+  mentee_id: 1,
+  status: 2
+)
+MentorMentee.create(
+  mentor_id: 5,
+  mentee_id: 2,
+  status: 2 
+)
+MentorMentee.create(
+  mentor_id: 4,
+  mentee_id: 3,
+  status: 2 
+) 
+MentorMentee.create(
+  mentor_id: 4,
+  mentee_id: 5,
+  status: 2 
+)
+
+
+BadDeck.create(
+  user1_id: 1,
+  user2_id: 2
+)
+BadDeck.create(
+  user1_id: 1,
+  user2_id: 3
+)
+BadDeck.create(
+  user1_id: 2,
+  user2_id: 1
+)
+BadDeck.create(
+  user1_id: 2,
+  user2_id: 5
+)
+BadDeck.create(
+  user1_id: 3,
+  user2_id: 1
+)
+BadDeck.create(
+  user1_id: 3,
+  user2_id: 4
+)
+BadDeck.create(
+  user1_id: 4,
+  user2_id: 3
+)
+BadDeck.create(
+  user1_id: 4,
+  user2_id: 5
+)
+BadDeck.create(
+  user1_id: 5,
+  user2_id: 2
+)
+BadDeck.create(
+  user1_id: 5,
+  user2_id: 4
+)
